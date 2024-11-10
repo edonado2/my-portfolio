@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Navbar Styling */
+.appbar {
+  background-color: #1c2331;
+}
+
+.appbar .logo {
+  flex-grow: 1;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.appbar button {
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #1c2331, #3f51b5);
+  background-image: url('./assets/heroImage.webp');
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section h5 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .button-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.5s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projects-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1c2331;
+}
+
+/* Project Card */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .MuiCardContent-root {
+  text-align: left;
+}
+
+.project-card .MuiTypography-h5 {
+  font-weight: bold;
+}
+
+/* Slide-in Animation */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section h5 {
+    font-size: 1rem;
+  }
+
+  .projects-section h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Education Section Styles */
+.education-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem 0;
+}
+
+.education-section .MuiAccordion-root {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-section .MuiAccordionSummary-root {
+  transition: background-color 0.3s ease;
+}
+
+.education-section .MuiAccordionSummary-root:hover {
+  background-color: #f0f0f0;
+}
+
+.education-section .MuiListItemText-primary {
+  font-size: 1rem;
+}
+
+.list-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
