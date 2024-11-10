@@ -76,7 +76,7 @@ export const HomeScreen = () => {
       </Drawer>
 
       {/* Hero Section */}
-      <Box className="hero-section" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', py: 8, textAlign: 'center', backgroundImage: 'url(../assets/heroImage.webp) center/cover', color: theme.palette.text.primary }} id="about">
+      <Box className="hero-section" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', py: 8, textAlign: 'center', backgroundImage: 'url(../assets/heroImage.webp) center/cover', color: 'white'}} id="about">
         <Box sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', p: 4, borderRadius: 2}}>
           <Typography variant="h2" className="fade-in">Hi, I'm Ernesto</Typography>
           <Typography variant="h5" className="fade-up">A Full Stack Developer passionate about creating dynamic websites.</Typography>
