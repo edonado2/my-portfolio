@@ -20,4 +20,10 @@ export const projects = [
         image: project3,
         url: "https://edonado.pythonanywhere.com/#popular"
     },
+    {
+        id: 4,
+        project_name: "Movie Match",
+        image: project3,
+        url: "https://edonado.pythonanywhere.com/#popular"
+    },
 ]

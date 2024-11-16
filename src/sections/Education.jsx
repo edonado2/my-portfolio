@@ -25,7 +25,7 @@ const EducationSection = () => {
           Education
         </Typography>
         {education.map((edu) => (
-          <Accordion key={edu.id} sx={{ mb: 2 }}>
+          <Accordion key={edu.id} sx={{ mb: 2,  color: theme.palette.text.primary}}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${edu.id}-content`}
